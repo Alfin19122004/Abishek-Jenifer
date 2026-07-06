@@ -1694,11 +1694,265 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 2px;
 }
 
-/* ==========================================================================
-   KEYFRAME ANIMATIONS
-   ========================================================================== */
-@keyframes rotateLogo {
-    0% { transform: rotate(0deg); }
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .hero-names {
+        font-size: 3.2rem;
+    }
+
+    .hero-names .h-ampersand {
+        font-size: 2.5rem;
+    }
+
+    .hero-logo-divider {
+        gap: 10px;
+    }
+
+    .hero-logo-divider .gold-line {
+        width: 50px;
+    }
+
+    .hero-date {
+        gap: 12px;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .event-img-wrap {
+        height: 200px;
+    }
+
+    .countdown-card {
+        width: 135px;
+    }
+
+    .map-wrapper {
+        max-width: 100%;
+    }
+
+    .blessings-card {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        height: auto;
+        padding: 60px 0 50px;
+    }
+
+    .hero-content {
+        padding: 0 22px;
+    }
+
+    .hero-names {
+        font-size: 2.4rem;
+    }
+
+    .hero-names .h-ampersand {
+        font-size: 2rem;
+    }
+
+    .grace-text {
+        font-size: 0.85rem;
+        margin-bottom: 18px;
+    }
+
+    .hero-logo-divider .gold-line {
+        width: 40px;
+    }
+
+    .hero-date {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero-date .date-txt {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 12px 26px;
+    }
+
+    .btn-large {
+        padding: 14px 30px;
+    }
+
+    .floating-controls {
+        bottom: 20px;
+        right: 20px;
+        gap: 12px;
+    }
+
+    .floating-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .countdown-card {
+        width: 145px;
+        padding: 24px 16px;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 40px auto 0;
+    }
+
+    .event-img-wrap {
+        height: 180px;
+    }
+
+    .event-details {
+        padding: 24px;
+    }
+
+    .map-wrapper {
+        margin: 30px auto;
+    }
+
+    .blessings-card {
+        padding: 35px;
+    }
+
+    .footer-section {
+        padding: 60px 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .hero-names {
+        font-size: 2rem;
+    }
+
+    .hero-names .h-ampersand {
+        font-size: 1.8rem;
+    }
+
+    .hero-logo-divider .gold-line {
+        width: 30px;
+    }
+
+    .hero-date {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-date .date-txt {
+        font-size: 0.9rem;
+    }
+
+    .scroll-down-indicator {
+        bottom: 25px;
+        font-size: 0.7rem;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 260px;
+        padding: 12px 20px;
+    }
+
+    .floating-controls {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .countdown-card {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .event-img-wrap {
+        height: 160px;
+    }
+
+    .event-details {
+        padding: 20px;
+    }
+
+    .map-wrapper {
+        padding: 6px;
+    }
+
+    .blessings-card {
+        padding: 30px 18px;
+    }
+
+    .footer-title {
+        font-size: 1.8rem;
+    }
+
+    .venue-address {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 50px 0 40px;
+    }
+
+    .hero-content {
+        max-width: 92%;
+    }
+
+    .hero-date {
+        gap: 6px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.18em;
+    }
+
+    .invite-lead,
+    .invite-footer,
+    .verse-text {
+        font-size: 1rem;
+    }
+
+    .countdown-num {
+        font-size: 2rem;
+    }
+
+    .info-card {
+        padding: 30px 20px;
+    }
+
+    .info-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .timeline-panel {
+        width: calc(100% - 30px);
+    }
+
+    .timeline-badge {
+        left: 15px;
+    }
+}
+
     100% { transform: rotate(360deg); }
 }
 
