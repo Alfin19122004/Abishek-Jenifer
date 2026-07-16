@@ -353,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Music play anim waves */
-.music-waves {
+/* .music-waves {
     position: absolute;
     width: 20px;
     height: 15px;
@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .playing .music-waves span:nth-child(4) {
     animation: waveBounce 1.0s ease-in-out infinite 0.1s;
-}
+} */
 
 /* ==========================================================================
    2. HERO SECTION
@@ -548,11 +548,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    .hero-section {
+    /* .hero-section {
         min-height: auto;
         height: auto;
         padding: 70px 0 80px;
-    }
+    } */
 
     .hero-content {
         padding: 0 20px;
@@ -586,9 +586,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 576px) {
-    .hero-section {
+    /* .hero-section {
         padding: 60px 0 70px;
-    }
+    } */
 
     .hero-content {
         padding: 0 16px;
@@ -1815,11 +1815,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    .hero-section {
+    /* .hero-section {
         min-height: auto;
         height: auto;
         padding: 60px 0 50px;
-    }
+    } */
 
     .hero-content {
         padding: 0 22px;
@@ -2052,9 +2052,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
-    .hero-section {
+    /* .hero-section {
         padding: 50px 0 40px;
-    }
+    } */
 
     .hero-content {
         max-width: 92%;
