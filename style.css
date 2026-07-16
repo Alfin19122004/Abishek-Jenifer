@@ -92,10 +92,10 @@ img {
 }
 
 .container {
-    width: 90%;
+    width: min(92vw, 1200px);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .section-padding {
@@ -311,17 +311,17 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .floating-controls {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    right: calc(16px + env(safe-area-inset-right));
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     z-index: 999;
 }
 
 .floating-btn {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     border: none;
     background: var(--color-white);
@@ -548,14 +548,84 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        height: auto;
+        padding: 70px 0 80px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
     .hero-names {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
+
     .hero-names .h-ampersand {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
+
     .grace-text {
+        font-size: 0.85rem;
+        margin-bottom: 18px;
+    }
+
+    .hero-logo-divider .gold-line {
+        width: 40px;
+    }
+
+    .hero-date {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero-date .date-txt {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 60px 0 70px;
+    }
+
+    .hero-content {
+        padding: 0 16px;
+    }
+
+    .hero-names {
+        font-size: 2.15rem;
+        line-height: 1.15;
+    }
+
+    .hero-names .h-ampersand {
+        font-size: 1.8rem;
+        margin: 8px 0;
+    }
+
+    .hero-logo-divider {
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+
+    .hero-logo-divider .gold-line {
+        width: 28px;
+    }
+
+    .hero-date {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 36px;
+    }
+
+    .hero-date .date-txt {
         font-size: 0.9rem;
+    }
+
+    .scroll-down-indicator {
+        bottom: 22px;
+        font-size: 0.68rem;
     }
 }
 
@@ -1731,9 +1801,9 @@ h1, h2, h3, h4, h5, h6 {
         height: 200px;
     }
 
-    .countdown-card {
+    /* .countdown-card {
         width: 135px;
-    }
+    } */
 
     .map-wrapper {
         max-width: 100%;
@@ -1800,10 +1870,10 @@ h1, h2, h3, h4, h5, h6 {
         height: 45px;
     }
 
-    .countdown-card {
+    /* .countdown-card {
         width: 145px;
         padding: 24px 16px;
-    }
+    } */
 
     .events-grid {
         grid-template-columns: 1fr;
@@ -1837,21 +1907,38 @@ h1, h2, h3, h4, h5, h6 {
         padding: 50px 0;
     }
 
+    .section-title {
+        font-size: 1.85rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+    }
+
     .hero-names {
-        font-size: 2rem;
+        font-size: 2.05rem;
+        line-height: 1.15;
     }
 
     .hero-names .h-ampersand {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
+        margin: 7px 0;
+    }
+
+    .hero-logo-divider {
+        gap: 8px;
+        margin-bottom: 24px;
     }
 
     .hero-logo-divider .gold-line {
-        width: 30px;
+        width: 28px;
     }
 
     .hero-date {
         flex-direction: column;
         gap: 8px;
+        margin-bottom: 36px;
     }
 
     .hero-date .date-txt {
@@ -1859,8 +1946,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .scroll-down-indicator {
-        bottom: 25px;
-        font-size: 0.7rem;
+        bottom: 22px;
+        font-size: 0.68rem;
     }
 
     .btn {
@@ -1870,13 +1957,52 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .floating-controls {
-        bottom: 15px;
-        right: 15px;
+        bottom: calc(12px + env(safe-area-inset-bottom));
+        right: calc(12px + env(safe-area-inset-right));
     }
 
-    .countdown-card {
+    .verse-wrapper {
+        padding: 30px 16px;
+    }
+
+    .verse-text {
+        font-size: 1.3rem;
+        line-height: 1.45;
+    }
+
+    .invite-lead {
+        font-size: 0.95rem;
+        margin-bottom: 22px;
+    }
+
+    .script-name {
+        font-size: 2.7rem;
+    }
+
+    .script-and {
+        font-size: 1.6rem;
+    }
+
+    /* .countdown-card {
         width: 100%;
         max-width: 220px;
+    } */
+
+    .timeline-panel {
+        width: calc(100% - 46px);
+        padding: 18px;
+    }
+
+    .timeline-heading h3 {
+        font-size: 1.35rem;
+    }
+
+    .timeline-body p {
+        font-size: 0.85rem;
+    }
+
+    .rsvp-form-container {
+        padding: 24px 16px;
     }
 
     .event-img-wrap {
@@ -1884,7 +2010,24 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .event-details {
-        padding: 20px;
+        padding: 18px;
+    }
+
+    .event-details h3 {
+        font-size: 1.5rem;
+        margin-bottom: 14px;
+    }
+
+    .event-meta p {
+        font-size: 0.85rem;
+    }
+
+    .info-card {
+        padding: 28px 20px;
+    }
+
+    .info-card h3 {
+        font-size: 1.25rem;
     }
 
     .map-wrapper {
@@ -1892,11 +2035,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .blessings-card {
-        padding: 30px 18px;
+        padding: 26px 16px;
+    }
+
+    .blessings-msg {
+        font-size: 1.55rem;
     }
 
     .footer-title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .venue-address {
@@ -1932,9 +2079,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     }
 
-    .countdown-num {
+    /* .countdown-num {
         font-size: 2rem;
-    }
+    } */
 
     .info-card {
         padding: 30px 20px;
@@ -1953,7 +2100,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-    100% { transform: rotate(360deg); }
+@keyframes rotateLogo {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 @keyframes drawCircle {
